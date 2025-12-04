@@ -18,5 +18,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url('../images/union_lookout.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* 50% brightness = dim */
 }

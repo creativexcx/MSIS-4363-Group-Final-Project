@@ -4,60 +4,30 @@ for details on configuring this project to bundle and minify static web assets. 
 /*Vertical nav 
 */
 /* The side navigation menu */
-.vertical-nav ul {
-    list-style-type: none; /* removes bullet points */
-    padding: 0; /* removes padding */
-    margin: 0; /* removes margin */
+.vertical-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-    /* The navigation menu links */
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
+    .vertical-nav li {
+        margin: 8px 0;
+    }
+
+    .vertical-nav a {
         text-decoration: none;
-        font-size: 25px;
-        color: #818181;
         display: block;
-        transition: 0.3s;
+        padding: 8px 12px;
+        color: black;
     }
 
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        left: 25px; /* Position close button on the left within the sidenav */
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-right .5s; /* Move content when sidenav opens */
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-        .sidenav a {
-            font-size: 18px;
-        }
+.site-title {
+    font-size: 28px;
+    font-weight: bold;
 }
 
 
-
-
-
-
-
-
+/*
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -95,7 +65,7 @@ button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
 }
-
+*/
 .footer {
   position: absolute;
   bottom: 0;
