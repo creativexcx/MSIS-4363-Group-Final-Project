@@ -13,40 +13,23 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">MSIS_4363_Group_Final_Project</a>
+               
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul id="mySidenav" class="sidenav">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                    <ul id="mySidenav" class="vertical-nav">
+                        <li><a href="#">Home </a></li>
+                        <li><a href="#">Job Search </a></li>
+                        <li><a href="#">Career Resources </a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-
-
-    @* JavaScript to control the sidenav *@
-    <script>
-        // Function to open the side navigation
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px"; // Open the sidenav
-            document.getElementById("main").style.marginRight = "250px"; // Push content to the right
-        }
-
-        // Function to close the side navigation
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0"; // Close the sidenav
-            document.getElementById("main").style.marginRight = "0"; // Reset content margin
-        }
-    </script>
 
     <div class="container">
         <main role="main" class="pb-3">

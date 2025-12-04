@@ -4,17 +4,10 @@ for details on configuring this project to bundle and minify static web assets. 
 /*Vertical nav 
 */
 /* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    right: 0; /* Align to the right */
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+.vertical-nav ul {
+    list-style-type: none; /* removes bullet points */
+    padding: 0; /* removes padding */
+    margin: 0; /* removes margin */
 }
 
     /* The navigation menu links */
