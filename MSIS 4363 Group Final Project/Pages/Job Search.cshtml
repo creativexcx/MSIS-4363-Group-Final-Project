@@ -2,3 +2,110 @@
 @model MSIS_4363_Group_Final_Project.Pages.Job_SearchModel
 @{
 }
+
+<div class="container mt-4">
+
+    <!-- Page Title -->
+    <div class="text-center mb-4">
+        <h1 class="fw-bold">Find Your Next Opportunity</h1>
+        <p class="text-muted">Search openings across Oklahoma and OSU-friendly employers.</p>
+    </div>
+
+    <!-- Search + Filters -->
+    <div class="card shadow-sm p-4 mb-4">
+        <div class="row g-3">
+
+            <!-- Search Bar -->
+            <div class="col-md-6">
+                <input type="text" class="form-control form-control-lg" placeholder="Search job titles or keywords..." />
+            </div>
+
+            <!-- Location Filter -->
+            <div class="col-md-3">
+                <select class="form-select form-select-lg">
+                    <option selected>Location</option>
+                    <option>Oklahoma City</option>
+                    <option>Stillwater</option>
+                    <option>Tulsa</option>
+                    <option>Remote</option>
+                </select>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="col-md-3">
+                <select class="form-select form-select-lg">
+                    <option selected>Category</option>
+                    <option>IT / Software</option>
+                    <option>Business / Finance</option>
+                    <option>Marketing</option>
+                    <option>Engineering</option>
+                    <option>Healthcare</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="text-end mt-3">
+            <button class="btn btn-primary px-4 btn-lg">Search</button>
+        </div>
+    </div>
+
+    <!-- Job Results Section -->
+    <h3 class="mb-3">Job Results</h3>
+
+    <div class="row g-4">
+
+        <!-- Job Card 1 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3 job-card">
+                <h4 class="fw-bold">Software Engineer – Paycom</h4>
+                <p class="text-muted mb-1">Oklahoma City, OK • Full Time</p>
+                <p><strong>Salary:</strong> $82,000–$105,000</p>
+                <p class="small">
+                    Work on enterprise HR systems in a collaborative Agile environment.
+                </p>
+                <button class="btn btn-outline-primary w-100">View Details</button>
+            </div>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3 job-card">
+                <h4 class="fw-bold">Marketing Coordinator – Sonic Corp</h4>
+                <p class="text-muted mb-1">Oklahoma City, OK • Full Time</p>
+                <p><strong>Salary:</strong> $52,000–$60,000</p>
+                <p class="small">
+                    Support digital content strategy and national brand initiatives.
+                </p>
+                <button class="btn btn-outline-primary w-100">View Details</button>
+            </div>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3 job-card">
+                <h4 class="fw-bold">Data Analyst – Devon Energy</h4>
+                <p class="text-muted mb-1">Oklahoma City, OK • Full Time</p>
+                <p><strong>Salary:</strong> $68,000–$82,000</p>
+                <p class="small">
+                    Analyze operational datasets to support production and drilling teams.
+                </p>
+                <button class="btn btn-outline-primary w-100">View Details</button>
+            </div>
+        </div>
+
+        <!-- Job Card 4 -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-3 job-card">
+                <h4 class="fw-bold">IT Support Specialist – Stillwater Medical</h4>
+                <p class="text-muted mb-1">Stillwater, OK • Full Time</p>
+                <p><strong>Salary:</strong> $48,000–$58,000</p>
+                <p class="small">
+                    Support clinical and administrative staff with IT issues and upgrades.
+                </p>
+                <button class="btn btn-outline-primary w-100">View Details</button>
+            </div>
+        </div>
+
+    </div>
+</div>

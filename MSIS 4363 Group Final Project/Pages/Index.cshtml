@@ -3,54 +3,158 @@
 @{
     ViewData["Title"] = "Home page";
 }
-
-@* <div class="text-center">
-    <h1 class="display-4">Welcome To Our Final Project pt 2!!</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div> *@
-
-
-<div class="text-center">
-    <h1 class="display-4">
-        Welcome to Cowboys Careers
-    </h1>
+<div class="text-center mb-4">
+    <h1 class="display-4">Welcome to Cowboys Careers</h1>
 </div>
 
-<div >
-    <div>
-        <h1> @* announcements area *@</h1>
-    </div>
-</div>
+<!-- Announcements -->
+<div class="container">
 
-@*Quick Links*@
-<div class="container mt-4">
     <div class="row">
 
-         <div class="col-md-6 card shadow-sm mb-4"> 
-             <div class ="text-center card-body">
-                <h1 class="cardtite">Announcements</h1>
-             </div>
-        </div>
+        <!-- Featured Job of the Week -->
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="mb-3">Announcements</h2>
+                    <h3 class="card-title text-center">Featured Job of the Week</h3>
 
-        <div class="col-md-6 card shadow-sm mb-4">
-            <div class="card-body">
-                 <h1 class="card-title">Browse Job Openings</h1>
-            @* This button will lead to actual job openings *@
-            <a herf="#"> </a>
+                    <h4 class="mt-3">Software Engineer – Paycom (Oklahoma City, OK)</h4>
+
+                    <ul class="mt-2">
+                        <li><b>Salary:</b> $82,000–$105,000</li>
+                        <li><b>Experience:</b> 1–3 years</li>
+                        <li><b>Employment Type:</b> Full Time</li>
+                        <li><b>Degree Preferred:</b> CS, MIS, Software Engineering</li>
+                    </ul>
+
+                    <h5 class="mt-3">Summary</h5>
+                    <p>
+                        Paycom is seeking a junior–mid level Software Engineer to join the product
+                        development team. This role focuses on building and maintaining enterprise HR software.
+                    </p>
+
+                    <h5 class="mt-3">Why it’s Featured</h5>
+                    <ul>
+                        <li>OSU alumni–friendly company</li>
+                        <li>Clear advancement path</li>
+                        <li>Strong mentorship program</li>
+                        <li>$5,000 signing bonus</li>
+                    </ul>
+
+                    <h5 class="mt-3">Key Skills</h5>
+                    <ul>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>REST APIs</li>
+                        <li>Agile/Scrum</li>
+                    </ul>
+
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-@*Featured Jobs area*@
-<div>
-    <h3> Jobs where OSU Amlunis currently work </h3>
 
-    <div>
-        @* showcase 4 jobs that alumins work at you can use LinkedIn*@
+
+<!-- New Job Openings -->
+<div class="container mt-4">
+    <h2 class="mb-3">New Openings in the Last 24 Hours</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+
+                    <h4>Data Analyst – Devon Energy (OKC, OK)</h4>
+                    <ul>
+                        <li>Salary: $68,000–$82,000</li>
+                        <li>Skills: SQL, Tableau, Python</li>
+                        <li>Summary: Analyze datasets to support drilling and production teams.</li>
+                    </ul>
+
+                    <h4>Marketing Coordinator – Sonic Corp (Oklahoma City)</h4>
+                    <ul>
+                        <li>Salary: $52,000–$60,000</li>
+                        <li>Skills: Social media strategy, Adobe Suite, analytics</li>
+                        <li>Summary: Assist with national brand campaigns.</li>
+                    </ul>
+
+                    <h4>Financial Analyst – Chesapeake Energy (OKC)</h4>
+                    <ul>
+                        <li>Salary: $65,000–$78,000</li>
+                        <li>Skills: Excel, forecasting, financial modeling</li>
+                        <li>Summary: Support budgeting and planning operations.</li>
+                    </ul>
+
+                    <h4>IT Support Specialist – Stillwater Medical Center</h4>
+                    <ul>
+                        <li>Salary: $48,000–$58,000</li>
+                        <li>Skills: Windows administration, ticketing systems</li>
+                        <li>Summary: Provide desktop support and upgrades.</li>
+                    </ul>
+
+                    <h4>HR Generalist – Love’s Travel Stops</h4>
+                    <ul>
+                        <li>Salary: $55,000–$70,000</li>
+                        <li>Skills: HRIS, onboarding, employee relations</li>
+                        <li>Summary: Support recruitment and HR operations.</li>
+                    </ul>
+
+                    <div class="mt-3">
+                        🔍 Search Jobs |
+                        🎓 Career Resources |
+                        📅 Career Events Calendar
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-@*0*@
 
 
+<!-- Browse Job Openings -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body text-center">
+                    <h2 class="card-title mb-3">Browse Job Openings</h2>
+                    <a href="#" class="btn btn-primary">View All Jobs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Featured Employers -->
+<div class="container mt-4">
+    <h2 class="mb-3">Featured Employers</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card shadow-sm mb-4 text-center">
+                <div class="card-body">
+
+                    <img src="~/images/devon energy.png" width="90" class="mx-2" />
+                    <img src="~/images/paycom_logo.png" width="90" class="mx-2" />
+                    <img src="~/images/loves logo.png" width="90" class="mx-2" />
+
+                    <p class="mt-3">FAA • Boeing • OG&E</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- OSU Alumni Jobs -->
+<div class="container mt-4">
+    <h3 class="mb-3">Jobs Where OSU Alumni Currently Work</h3>
+    <p>(You can showcase 4 roles pulled from LinkedIn or example data.)</p>
+</div>

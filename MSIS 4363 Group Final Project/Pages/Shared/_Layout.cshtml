@@ -9,35 +9,45 @@
     <link rel="stylesheet" href="~/MSIS_4363_Group_Final_Project.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Cowboy Careers</a>
-             </div>
-               
-             @* Nav Bar *@
-             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="d-flex">
+        <!-- Left Vertical Nav Bar -->
+        <nav class="vertical-nav bg-light border-end">
+            <h4 class="p-3">Cowboy Careers</h4>
+            <ul class="nav flex-column px-2">
 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="vertical-nav">
-                        <li><a href="#Job_Search.cshtml">Home </a></li>
-                        <li><a href="#">Job Search </a></li>
-                        <li><a href="#">Career Resources </a></li>
-                    </ul>
-                </div>
-            </div>
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" asp-page="/Index">
+@*                         <img src="~/images/home-icon.png" class="nav-icon" />
+ *@                        <span class="ms-2">Home</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" asp-page="/Job_Search.cshtml">
+@*                         <img src="~/images/search-icon.png" class="nav-icon" />
+ *@                        <span class="ms-2">Job Search</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center" asp-page="/CareerResources">
+@*                         <img src="~/images/web-icon.png" class="nav-icon" />
+ *@                        <span class="ms-2">Career Resources</span>
+                    </a>
+                </li>
+
+            </ul>
         </nav>
-    </header>
 
+@*         <div class="p-3">
+            <img src="~/images/user-icon.png" class="user-icon" />
+        </div> *@
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <div class="container">
+                 <main role="main" class="pb-3">
+                 @RenderBody()
+                 </main>
+            </div>
     </div>
 
     <footer class="border-top footer text-muted">
