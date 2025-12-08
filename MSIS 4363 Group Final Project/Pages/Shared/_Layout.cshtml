@@ -7,42 +7,62 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MSIS_4363_Group_Final_Project.styles.css" asp-append-version="true" />
+    <style>
+        .vertical-nav .nav-link {
+            color: #000 !important; /* Make links black */
+            font-weight: 500;
+        }
+
+            .vertical-nav .nav-link:hover {
+                color: #FE5C00 !important; /* OSU orange on hover */
+                background-color: #f5f5f5;
+                border-radius: 6px;
+            }
+
+        .vertical-nav h4 {
+            color: #000;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <div class="d-flex">
+
+    <div class="d-flex layout-wrapper">
+        
         <!-- Left Vertical Nav Bar -->
-        <nav class="vertical-nav bg-light border-end">
+        <nav class="vertical-nav bg-light  border-end d-flex flex-column">
             <h4 class="p-3">Cowboy Careers</h4>
 
             <ul class="nav flex-column px-2">
 
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-items-center" asp-page="/Index">
-                        <img src="~/images/home-icon.png" class="nav-icon" />
+                        @* <img src="~/images/home-icon.png" class="nav-icon" /> *@
                         <span class="ms-2">Home</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-items-center" asp-page="/Job_Search">
-                        <img src="~/images/search-icon.png" class="nav-icon" />
+                        @* <img src="~/images/search-icon.png" class="nav-icon" /> *@
                         <span class="ms-2">Job Search</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-items-center" asp-page="/CareerResources">
-                        <img src="~/images/web-icon.png" class="nav-icon" />
+                        @* <img src="~/images/web-icon.png" class="nav-icon" /> *@
                         <span class="ms-2">Career Resources</span>
                     </a>
                 </li>
 
             </ul>
+
+            @* <div class="nav-login-box">
+                <a href="/Login">Login</a>
+            </div> *@
         </nav>
 
-        @*         <div class="p-3">
-            <img src="~/images/user-icon.png" class="user-icon" />
-        </div> *@
 
         <div class="container">
             <main role="main" class="pb-3">
@@ -52,7 +72,7 @@
     </div>
 
 
-    <footer class="border-top footer text-muted">
+    <footer class="bg-light border-top footer text-muted">
         <div class="container">
             &copy; 2025 - MSIS_4363_Group_Final_Project - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
