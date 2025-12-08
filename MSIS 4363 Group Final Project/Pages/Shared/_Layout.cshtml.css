@@ -8,6 +8,17 @@ for details on configuring this project to bundle and minify static web assets. 
     list-style-type: none;
     padding: 0;
     margin: 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
 
     .vertical-nav li {
@@ -21,51 +32,27 @@ for details on configuring this project to bundle and minify static web assets. 
         color: black;
     }
 
+.nav-icon {
+    height: 5rem;
+    width: 5rem; /* keeps icons square */
+    object-fit: contain;
+}
+
+.nav-link .nav-icon {
+    margin-top: -2px;
+}
+
+.vertical-nav .nav-link.active {
+    color: #F36C21 !important;
+    font-weight: 700;
+}
+
 .site-title {
     font-size: 28px;
     font-weight: bold;
 }
 
 
-/*
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-a {
-  color: #0077cc;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-*/
 .footer {
   position: absolute;
   bottom: 0;
@@ -73,3 +60,4 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
