@@ -17,10 +17,34 @@ html {
   min-height: 100%;
 }
 
+/*Fonts*/
+
+.montserrat-<uniquifier > {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.roboto-condensed-<uniquifier > {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:large;
+}
+
+
 body {
     margin-bottom: 60px;
-    background-image: url('../images/union_lookout.jpg');
-    background-size: cover;
+    background-image: url('../images/spears_business.jpg');
+    /*    background-image: url('../images/union_lookout.jpg');
+*/ background-size: cover;
     background-position: center;
     position: relative;
 }
@@ -59,7 +83,7 @@ ul {
     }
 
 .quick-links a {
-    color: white; /* default color */
+    color: black; /* default color */
     font-weight: 600;
     text-decoration: none;
     transition: 0.2s ease-in-out;
@@ -80,26 +104,6 @@ ul {
         background-color: #f9f9f9;
     }
 
-/* OSU-style content box */
-.osu-box {
-    background-color: #f5f5f5; /* light gray box */
-    border-radius: 8px;
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
-    overflow: hidden; /* makes the orange bar flush with corners */
-    margin-bottom: 30px;
-}
-
-/* Orange header strip */
-.osu-box-header {
-    background-color: #FF6600; /* OSU orange */
-    height: 10px; /* thickness of orange strip */
-    width: 100%;
-}
-
-/* Inner content */
-.osu-box-body {
-    padding: 25px;
-}
 
 /* OSU-style content box */
 .osu-box {
@@ -144,3 +148,48 @@ ul {
         transform: translateY(-4px); /* lift */
         box-shadow: 0px 6px 14px rgba(0,0,0,0.25);
     }
+
+
+.header-section {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+    .header-section h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+.section-title {
+    margin-top: 40px;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.contact-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border: none;
+}

@@ -31,27 +31,40 @@
         
         <!-- Left Vertical Nav Bar -->
         <nav class="vertical-nav bg-light  border-end d-flex flex-column">
-            <h4 class="p-3">Cowboy Careers</h4>
+
+            <div class="text-center align-items-center">
+                <img src="~/images/oklahoma_state_university_system_logo.svg.png" width="90" class="mx-2" />
+                <h4 class="p-3" style="color:#fe5c00">Cowboy Careers</h4>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="px-3 pb-3">
+                <input type="text"
+                       class="form-control"
+                       placeholder="Search..."
+                       style="background-color: #e0e0e0; color: black; border: none;">
+            </div>
+
 
             <ul class="nav flex-column px-2">
 
                 <li class="nav-item">
                     <a class="nav-link active d-flex align-items-center" asp-page="/Index">
-                        @* <img src="~/images/home-icon.png" class="nav-icon" /> *@
+                         <img src="~/images/home-icon.png" class="nav-icon" width="24"/> 
                         <span class="ms-2">Home</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active d-flex align-items-center" asp-page="/Job_Search">
-                        @* <img src="~/images/search-icon.png" class="nav-icon" /> *@
+                    <a class="nav-link d-flex align-items-center" asp-page="/Job Search">
+                        <img src="~/images/search-icon.png" class="nav-icon" width="24" />
                         <span class="ms-2">Job Search</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active d-flex align-items-center" asp-page="/CareerResources">
-                        @* <img src="~/images/web-icon.png" class="nav-icon" /> *@
+                    <a class="nav-link active d-flex align-items-center" asp-page="/Career Resources">
+                        <img src="~/images/web-icon.png" class="nav-icon" width="24"/> 
                         <span class="ms-2">Career Resources</span>
                     </a>
                 </li>
